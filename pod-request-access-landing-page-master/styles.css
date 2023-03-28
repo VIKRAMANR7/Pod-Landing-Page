@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700&display=swap");
+:root {
+  --bg-white: hsl(0, 0%, 100%);
+  --bg-cyan: hsl(157, 74%, 61%);
+  --bg-lightgray: hsl(224, 40%, 82%);
+  --bg-lightblack: hsl(224, 26%, 23%);
+  --bg-maincolor: hsl(222, 37%, 10%);
+}
+*,
+*::before,
+::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+input,
+button {
+  font: inherit;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+button {
+  outline-color: transparent;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Chivo", sans-serif;
+  background-color: var(--bg-maincolor);
+  position: relative;
+}
+.container {
+  margin-left: 15rem;
+}
+.logo {
+  padding: 5rem 0 18rem 0;
+}
+.bg-img {
+  position: absolute;
+  right: 0;
+  top: 6rem;
+  max-width: 888px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 37% 100%, 37% 23%, 0 23%);
+}
+.pattern {
+  position: absolute;
+  top: 65rem;
+  right: 0;
+  z-index: 3;
+}
+.text-content {
+  max-width: 700px;
+}
+h1 {
+  padding-bottom: 4rem;
+  font-size: 5rem;
+  line-height: 6rem;
+  letter-spacing: 3px;
+  color: var(--bg-white);
+  font-weight: 300;
+}
+h1 span {
+  color: var(--bg-cyan);
+}
+.main-para {
+  padding: 0 16rem 4rem 0;
+  font-size: 2.2rem;
+  line-height: 3rem;
+  color: var(--bg-lightgray);
+  font-weight: 300;
+}
+.email {
+  width: 400px;
+  padding: 1.4rem 0;
+  background-color: var(--bg-lightblack);
+  border-radius: 2rem;
+  font-weight: 300;
+}
+input[type="email"] {
+  font-size: 1.5rem;
+  text-indent: 3rem;
+  color: var(--bg-white);
+}
+
+input[type="email"]::placeholder {
+  color: var(--bg-lightgray);
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.box {
+  position: relative;
+}
+.request {
+  width: 130px;
+  padding: 1.2rem 0;
+  font-size: 1.3rem;
+  background-color: var(--bg-cyan);
+  border-radius: 2rem;
+  position: absolute;
+  bottom: 4px;
+  left: 267px;
+  font-weight: 700;
+}
+.error {
+  font-size: 1.2rem;
+  padding-left: 1.5rem;
+  padding-top: 0.5rem;
+  margin: 0;
+  color: hsl(0, 95%, 60%);
+  display: none;
+}
+.img-gallery {
+  margin-top: 6rem;
+  max-width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    margin-left: 4rem;
+  }
+  .logo {
+    padding: 9rem 0 20rem 0;
+  }
+  .bg-img {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .bg-img {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 79% 100%, 79% 34%, 0 34%);
+  }
+  .pattern {
+    position: absolute;
+    left: 4rem;
+    top: 90rem;
+    z-index: 3;
+  }
+  .text-content {
+    max-width: 700px;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  p {
+    font-size: 1.8rem;
+    line-height: 3.6rem;
+    padding: 0 11rem 40px 0;
+  }
+  .img-gallery {
+    max-width: 550px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .container {
+    margin-left: 0;
+  }
+  .logo {
+    padding: 3rem 0 8rem 0;
+    display: flex;
+    justify-content: center;
+  }
+  .bg-img {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    max-width: 375px;
+    clip-path: none;
+    opacity: 0.5;
+  }
+  .pattern {
+    display: none;
+  }
+  .text-content {
+    max-width: 375px;
+  }
+  h1 {
+    margin: 0 3rem;
+    font-size: 2.4rem;
+    line-height: 3.5rem;
+    letter-spacing: 0;
+    padding-bottom: 4rem;
+    text-align: center;
+  }
+  .main-para {
+    font-size: 1.4rem;
+    padding: 0 3rem 4rem 3rem;
+    text-align: center;
+  }
+  .box {
+    top: 90px;
+  }
+  .email {
+    max-width: 315px;
+    margin: 0rem 3rem 6rem 3rem;
+  }
+  .request {
+    width: 315px;
+    padding: 1.5rem 0 1.5rem 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    margin: 0 3rem 0 3rem;
+  }
+  .img-gallery {
+    margin-top: 0;
+    padding: 4rem 3rem 0 3rem;
+    max-width: 375px;
+    position: absolute;
+    top: 420px;
+    text-align: center;
+  }
+  .img-gallery img {
+    width: 90%;
+  }
+}

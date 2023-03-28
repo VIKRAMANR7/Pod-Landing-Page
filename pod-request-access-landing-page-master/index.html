@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Frontend Mentor | Pod request access landing page</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <picture class="bg-img">
+        <source
+          media="(min-width: 1440px)"
+          srcset="./assets/desktop/image-host.jpg"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="./assets/tablet/image-host.jpg"
+        />
+        <source
+          media="(min-width: 375px)"
+          srcset="./assets/mobile/image-host.jpg"
+        />
+        <img src="./assets/desktop/image-host.jpg" />
+      </picture>
+      <div class="pattern">
+        <img src="./assets/desktop/bg-pattern-dots.svg" />
+      </div>
+      <div class="logo">
+        <img src="./assets/desktop/logo.svg" />
+      </div>
+      <div class="text-content">
+        <h1><span>PUBLISH YOUR PODCASTS</span> EVERYWHERE.</h1>
+        <p class="main-para">
+          Upload your audio to Pod with a single click.We'll then distribute
+          your podcast to Spotify,Apple Podcasts,Google Podcasts,Pocket Casts
+          and more!
+        </p>
+        <div class="box">
+          <input type="email" class="email" placeholder="Email address" />
+          <button class="request">Request access</button>
+        </div>
+        <p class="error">Oops! Please check your email</p>
+      </div>
+      <div class="img-gallery">
+        <div>
+          <img src="./assets/desktop/spotify.svg" />
+        </div>
+        <div>
+          <img src="./assets/desktop/apple-podcast.svg" />
+        </div>
+        <div>
+          <img src="./assets/desktop/google-podcasts.svg" />
+        </div>
+        <div>
+          <img src="./assets/desktop/pocket-casts.svg" />
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
